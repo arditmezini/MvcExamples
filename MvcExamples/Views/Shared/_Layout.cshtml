@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid MVC</title>
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/modernizr", "~/bundles/jquery", "~/bundles/bootstrap")
 </head>
 <body>
 
@@ -23,6 +23,7 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Grid.Mvc", "Index", "Visitor")</li>
                     <li>@Html.ActionLink("Wizard", "PlayerDetails", "Wizard")</li>
+                    <li>@Html.ActionLink("DateTimePicker","Index","DateTimePicker")</li>
                 </ul>
             </div>
         </div>
